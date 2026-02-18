@@ -1,0 +1,31 @@
+/* Without at rules  */
+/* .ap-container {
+  --text-clr: red;
+}
+
+.ap-para {
+  --text-clr: 12px;
+}
+
+.ap-span {
+  color: var(--text-clr);
+} */
+
+/* With at-rules */
+@property --text-clr {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: lightblue;
+}
+
+.ap-container {
+  --text-clr: red;
+}
+
+.ap-para {
+  --text-clr: 12px;
+}
+
+.ap-span {
+  color: var(--text-clr);
+}
