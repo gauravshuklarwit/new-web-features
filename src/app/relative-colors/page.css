@@ -1,0 +1,73 @@
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+.colors-group-1,
+.colors-group-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+}
+
+.colors-group-1 {
+  --clr-box-1: hsl(from red h s l);
+  --clr-box-2: hsl(from green h s l);
+}
+
+.box-1 {
+  background-color: var(--clr-box-1);
+}
+
+.box-2 {
+  background-color: var(--clr-box-2);
+}
+
+.colors-group-2 {
+  --clr-box-3: oklch(from red l c h);
+  --clr-box-4: oklch(from green l c h);
+}
+
+.box-3 {
+  background-color: var(--clr-box-3);
+}
+
+.box-4 {
+  background-color: var(--clr-box-4);
+}
+
+.gradients {
+  display: grid;
+  gap: 1rem;
+}
+
+.gradient {
+  width: 20rem;
+  height: 10rem;
+}
+
+.gradient-1 {
+  --gradient-start: red;
+  --gradient-end: blue;
+
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+}
+
+.gradient-2 {
+  --gradient-start: oklch(from red l c h);
+  --gradient-end: oklch(from blue l c h);
+
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+}
