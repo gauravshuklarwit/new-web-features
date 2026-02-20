@@ -12,6 +12,9 @@ export default function Home() {
         <li>
           <Link href="/relative-colors">Relative Colors</Link>
         </li>
+        <li>
+          <Link href="/form-component">Form Component</Link>
+        </li>
       </ol>
     </div>
   );
