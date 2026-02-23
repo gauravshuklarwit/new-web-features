@@ -15,6 +15,9 @@ export default function Home() {
         <li>
           <Link href="/form-component">Form Component</Link>
         </li>
+        <li>
+          <Link href="/color-functions">New CSS color spaces and functions</Link>
+        </li>
       </ol>
     </div>
   );

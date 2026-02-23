@@ -1,0 +1,10 @@
+.box {
+  width: 5rem;
+  height: 5rem;
+
+  /* background-color: color(display-p3 1 2 4); */
+  /* background-color: color(xyz 1 3 4); */
+
+  /* background-color: color-mix(in srgb, red 15%, blue 10%); */
+  background-color: color-mix(in oklch, blue 15%, white);
+}
