@@ -1,0 +1,35 @@
+.main {
+  min-height: 100svh;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  --_shadow-size: 0;
+}
+
+.social {
+  cursor: pointer;
+  list-style: none;
+
+  font-size: 2rem;
+
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 12%);
+  box-shadow: 0px 0px var(--_shadow-size) hsl(177, 100%, 40%);
+  transition: box-shadow 0.5s cubic-bezier(0, 0, 0.1, 1);
+}
+
+.social:hover {
+  --_shadow-size: 5em;
+}

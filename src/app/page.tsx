@@ -44,6 +44,9 @@ export default function Home() {
         <li>
           <Link href="/attr-function">Attr function</Link>
         </li>
+        <li>
+          <Link href="/boxs-animation">Box shadow animation</Link>
+        </li>
       </ol>
     </div>
   );
