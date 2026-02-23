@@ -26,6 +26,9 @@ export default function Home() {
             <Link href="/spa-transitions">Same document view transitions</Link>
           </ViewTransition>
         </li>
+        <li>
+          <Link href="/activity-component">Activity Component</Link>
+        </li>
       </ol>
     </div>
   );
