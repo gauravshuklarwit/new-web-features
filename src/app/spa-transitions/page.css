@@ -1,0 +1,150 @@
+main {
+  --bounce-easing: linear(
+    0,
+    0.004,
+    0.016,
+    0.035,
+    0.063,
+    0.098,
+    0.141 13.6%,
+    0.25,
+    0.391,
+    0.563,
+    0.765,
+    1,
+    0.891 40.9%,
+    0.848,
+    0.813,
+    0.785,
+    0.766,
+    0.754,
+    0.75,
+    0.754,
+    0.766,
+    0.785,
+    0.813,
+    0.848,
+    0.891 68.2%,
+    1 72.7%,
+    0.973,
+    0.953,
+    0.941,
+    0.938,
+    0.941,
+    0.953,
+    0.973,
+    1,
+    0.988,
+    0.984,
+    0.988,
+    1
+  );
+
+  display: grid;
+  justify-content: center;
+  gap: 4rem;
+  padding-block: 3rem;
+
+  text-align: center;
+}
+
+/* START: Practicing view transitions */
+
+h1 {
+  view-transition-name: title;
+}
+
+::view-transition-group(title) {
+  animation-timing-function: ease-in-out;
+}
+
+#card1 {
+  view-transition-name: card1;
+}
+#card2 {
+  view-transition-name: card2;
+}
+#card3 {
+  view-transition-name: card3;
+}
+#card4 {
+  view-transition-name: card4;
+}
+
+/* ::view-transition-group(card1),
+::view-transition-group(card2),
+::view-transition-group(card3),
+::view-transition-group(card4) {
+  animation-timing-function: var(--bounce-easing);
+} */
+
+#cards-wrapper > li {
+  view-transition-class: card;
+}
+
+html::view-transition-group(card) {
+  animation-timing-function: var(--bounce-easing);
+  animation-duration: 0.5s;
+}
+
+/* END: Practicing view transitions */
+
+@layer add-card {
+  @keyframes animate-in {
+    0% {
+      opacity: 0;
+      translate: 0 -200px;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  ::view-transition-new(targeted-card):only-child {
+    animation: animate-in ease-in 0.25s forwards;
+  }
+}
+
+/* Cards that get removed should animate-out */
+@layer remove-card {
+  @keyframes animate-out {
+    0% {
+      opacity: 1;
+      translate: 0 0;
+    }
+    100% {
+      opacity: 0;
+      translate: 0 -200px;
+    }
+  }
+
+  ::view-transition-old(targeted-card):only-child {
+    animation: animate-out ease-out 0.5s forwards;
+  }
+}
+
+button {
+  cursor: pointer;
+  justify-self: center;
+  max-inline-size: fit-content;
+  padding: 1em 2em;
+}
+
+#cards-wrapper {
+  display: flex;
+  justify-items: center;
+  gap: 2rem;
+}
+
+#cards-wrapper > * {
+  list-style: none;
+  width: 15rem;
+  aspect-ratio: 9/16;
+  border-radius: 16px;
+}
+
+a {
+  max-inline-size: fit-content;
+  justify-self: center;
+}

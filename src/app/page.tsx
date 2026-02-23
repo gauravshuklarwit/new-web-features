@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ViewTransition } from "react";
 
 export default function Home() {
   return (
@@ -16,7 +17,14 @@ export default function Home() {
           <Link href="/form-component">Form Component</Link>
         </li>
         <li>
-          <Link href="/color-functions">New CSS color spaces and functions</Link>
+          <Link href="/color-functions">
+            New CSS color spaces and functions
+          </Link>
+        </li>
+        <li>
+          <ViewTransition name="spa">
+            <Link href="/spa-transitions">Same document view transitions</Link>
+          </ViewTransition>
         </li>
       </ol>
     </div>
