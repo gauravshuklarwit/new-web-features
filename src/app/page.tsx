@@ -32,6 +32,9 @@ export default function Home() {
         <li>
           <Link href="/anchor-positioning">Anchor positioning</Link>
         </li>
+        <li>
+          <Link href="/invoker-commands">Invoker commands</Link>
+        </li>
       </ol>
     </div>
   );
