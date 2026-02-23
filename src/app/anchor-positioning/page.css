@@ -1,0 +1,18 @@
+.anchor {
+  anchor-name: --my-anchor;
+
+  color: white;
+  background-color: rebeccapurple;
+  width: 10rem;
+  height: 10rem;
+}
+
+.anchored-element {
+  position: absolute;
+  position-anchor: --my-anchor;
+  position-area: end;
+
+  width: 7rem;
+  height: 7rem;
+  background-color: goldenrod;
+}

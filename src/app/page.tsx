@@ -29,6 +29,9 @@ export default function Home() {
         <li>
           <Link href="/activity-component">Activity Component</Link>
         </li>
+        <li>
+          <Link href="/anchor-positioning">Anchor positioning</Link>
+        </li>
       </ol>
     </div>
   );
