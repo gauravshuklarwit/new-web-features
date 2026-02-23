@@ -1,0 +1,33 @@
+article {
+  max-width: 70ch;
+  margin-inline: auto;
+  margin-block: 4rem;
+}
+
+article p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+
+  width: 100%;
+  background-color: dodgerblue;
+
+  transform-origin: 0 50%;
+  animation: grow-progress auto linear;
+  animation-timeline: scroll();
+}
+
+@keyframes grow-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

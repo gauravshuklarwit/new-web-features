@@ -47,6 +47,9 @@ export default function Home() {
         <li>
           <Link href="/boxs-animation">Box shadow animation</Link>
         </li>
+        <li>
+          <Link href="/scroll-driven-animations">Scroll driven animations</Link>
+        </li>
       </ol>
     </div>
   );
