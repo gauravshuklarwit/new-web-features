@@ -35,6 +35,9 @@ export default function Home() {
         <li>
           <Link href="/invoker-commands">Invoker commands</Link>
         </li>
+        <li>
+          <Link href="/interest-invokers">Interest Invokers</Link>
+        </li>
       </ol>
     </div>
   );
