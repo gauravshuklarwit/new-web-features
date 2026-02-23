@@ -1,0 +1,7 @@
+.my-div::before {
+    content: attr(data-text) " World";
+}
+
+.my-div::after {
+    content: attr(data-text) " CSS";
+}

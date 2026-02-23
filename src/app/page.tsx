@@ -41,6 +41,9 @@ export default function Home() {
         <li>
           <Link href="/popover">Popover</Link>
         </li>
+        <li>
+          <Link href="/attr-function">Attr function</Link>
+        </li>
       </ol>
     </div>
   );
