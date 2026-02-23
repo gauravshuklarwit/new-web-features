@@ -38,6 +38,9 @@ export default function Home() {
         <li>
           <Link href="/interest-invokers">Interest Invokers</Link>
         </li>
+        <li>
+          <Link href="/popover">Popover</Link>
+        </li>
       </ol>
     </div>
   );
