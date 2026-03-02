@@ -1,0 +1,12 @@
+.search-container {
+    min-height: 100svh;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.query {
+    font-weight: bold;
+    color: light-dark(green, yellow);
+}

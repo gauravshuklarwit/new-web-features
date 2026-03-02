@@ -1,0 +1,27 @@
+.form-container {
+    min-height: 100svh;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-block-end: 2rem;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form-content input {
+    padding: 1rem;
+}
+
+.form-content button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1em 2em;
+}

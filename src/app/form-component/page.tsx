@@ -1,4 +1,5 @@
 // "use client"
+import "./page.css";
 
 import Form from "next/form";
 
@@ -8,10 +9,13 @@ export default function Page() {
   }
 
   return (
-    <Form action="/search">
-      {/* <Form action={handleSubmit}> */}
-      <input type="text" name="query" />
-      <button type="submit">Search</button>
+    <Form action="/search" className="form-container">
+      {/* <Form action={handleSubmit} className="form-container"> */}
+      <h1>Next.js Form component</h1>
+      <div className="form-content">
+        <input type="text" name="query" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </div>
     </Form>
   );
 }
