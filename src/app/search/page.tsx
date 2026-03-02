@@ -1,7 +1,7 @@
-import React from 'react'
+export default async function Page({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+  const query = (await searchParams).query;
 
-export default function Page() {
   return (
-    <div>Page</div>
+    <div>Search results for: {query}</div>
   )
 }
